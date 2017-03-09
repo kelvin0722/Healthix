@@ -1,0 +1,37 @@
+
+[
+    {
+        "name":"Lucy Gathon Farah",
+        "DOB":"1987-02-04",
+        "Gender":"F",
+        "PostalAddress":"1234-001 nairobi",
+        "PhysicalAddress":"1234-001 nairobi",
+        "idno":"27665651",
+        "email":"lucy.gathoni@gmail.com",
+         "phoneno":"0719512216",
+         "profilurl":"img/profics/grace.jpg"
+    },
+    {
+        "name":"Peter Kariuki",
+        "DOB":"1980-05-06",
+        "Gender":"M",
+        "PostalAddress":"6534-001 Rongai",
+        "PhysicalAddress":"6534-001 Rongai",
+        "idno":"29115651",
+        "email":"peter.kariuki@gmail.com",
+         "phoneno":"0710512216",
+         "profilurl":"img/profics/james.jpg"
+    },
+
+     {
+        "name":"Jackline Kendi Farah",
+        "DOB":"1993-02-04",
+        "Gender":"F",
+        "PostalAddress":"3333-004 nairobi",
+        "PhysicalAddress":"3333-004 nairobi",
+        "idno":"20115651",
+        "email":"jackline.kendi@gmail.com",
+         "phoneno":"0710012216",
+         "profilurl":"img/profics/winnie.jpg"
+    }   
+]
