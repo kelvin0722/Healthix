@@ -1,14 +1,29 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="healThix">
   <head>
     <meta charset="utf-8">
-    <title>My HTML File</title>
+    <title>Healthix</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <script src="bower_components/angular/angular.js"></script>
+
+    <!--Angular Imports -->
+   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <!--Application configuration files  -->
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+
+  <!-- component configuration files   -->
+  <script src="membersview/member.module.js"></script>
+  <script src="membersview/member.component.js"></script>
+  <script src="userprofile/userprofile.module.js"></script>
+  <script src ="userprofile/userprofile.component.js"></script>
+
   </head>
   <body>
-
-    <p>Nothing here {{'yet' + '!'}}</p>
+   
+   <!-- Loading Views -->
+ <div ng-view> </div>
 
   </body>
 </html>
