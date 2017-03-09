@@ -1,15 +1,10 @@
-# AngularJS Phone Catalog Tutorial Application
+# Healthix Application
 
 
 ## Overview
 
-This application takes the developer through the process of building a web-application using
-AngularJS. The application is loosely based on the **Google Phone Gallery**, which no longer exists.
-Here is a historical reference: [Google Phone Gallery on WayBack][google-phone-gallery]
+This is an Application that displays a list of users and allows the administrator to make changes on the applicatio
 
-Each tagged commit is a separate lesson teaching a single aspect of the framework.
-
-The full tutorial can be found at https://docs.angularjs.org/tutorial.
 
 
 ## Prerequisites
