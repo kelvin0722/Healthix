@@ -1,5 +1,5 @@
 // Jasmine Testing file
-/*
+
 describe('userProfile', function() {
 
   // Load the module that contains the UserProfile  component` component before each test
@@ -32,4 +32,3 @@ beforeEach(inject(function($componentController,_$httpBackend_){
   });
 
 });
-*/

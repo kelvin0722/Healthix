@@ -13,5 +13,5 @@ function config($locationProvider,$routeProvider){
     when('/members/:memberId',{
         template:'<userprofile></userprofile>'
     }).
-    otherwise('/members')
-})
+    otherwise('/members');
+});
