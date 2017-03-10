@@ -6,11 +6,8 @@ component('memberList',{
     function MembersListController($http)
     {
         var self = this;
-
-
-
         $http.get('members/members.json').success(function(data){
-            self.members = data
+            self.members = data;
         }).error(function(data,status){
           console.log('Error!!',data,status)
         })

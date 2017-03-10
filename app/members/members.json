@@ -1,8 +1,9 @@
-
-[
-    {
-        "id":0,
-        "name":"Lucy Gathon Farah",
+  [
+      {
+        "id":"Lucy-Gathon-Farah",
+        "details":
+        {
+        "name":"Lucy Gathoni Farah",
         "DOB":"1987-02-04",
         "Gender":"F",
         "PostalAddress":"1234-001 nairobi",
@@ -11,9 +12,12 @@
         "email":"lucy.gathoni@gmail.com",
          "phoneno":"0719512216",
          "profilurl":"img/profics/grace.jpg"
+         }
     },
+
     { 
-        "id":2,
+        "id":"Peter-Kariuki",
+        "details":{
         "name":"Peter Kariuki",
         "DOB":"1980-05-06",
         "Gender":"M",
@@ -23,11 +27,11 @@
         "email":"peter.kariuki@gmail.com",
          "phoneno":"0710512216",
          "profilurl":"img/profics/james.jpg"
-    },
-
+        }},
      {
-        "id":3,
-        "name":"Jackline Kendi Farah",
+        "id":"Jackline-Kendi-Farah",
+        "details":{
+         "name":"Jackline Kendi Farah",
         "DOB":"1993-02-04",
         "Gender":"F",
         "PostalAddress":"3333-004 nairobi",
@@ -36,5 +40,6 @@
         "email":"jackline.kendi@gmail.com",
          "phoneno":"0710012216",
          "profilurl":"img/profpics/winnie.jpg"
-    }   
-]
+      } 
+    }
+]  

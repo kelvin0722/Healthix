@@ -2,13 +2,24 @@
 
 describe('membersList', function() {
 
-  // Load the module that contains the `phoneList` component before each test
+  // Load the module that contains the UserProfile  component` component before each test
   beforeEach(module('members'));
 
   // Test the controller
   describe('MembersListController', function() {
 
     var ctrl, $httpBackend;
+
+    var user_data =[
+      {
+         details:{
+           name:'Lucy Gathon Farah'
+         },
+         details:{
+           name:'Peter Kariuki'
+         }
+      }
+    ];
    
 
 beforeEach(inject(function($componentController,_$httpBackend_){
@@ -16,8 +27,8 @@ beforeEach(inject(function($componentController,_$httpBackend_){
 
        //mock a get request to return names specified
        $httpBackend.expectGET('members/members.json').
-       respond([{name:'Lucy Gathon Farah"',name:'Peter Kariuki'}]);
-       ctrl  = $componentController('memberList')
+       respond(user_data);
+       ctrl  = $componentController('membersList');
 
    }));
 
@@ -25,7 +36,7 @@ beforeEach(inject(function($componentController,_$httpBackend_){
         expect(ctrl.members).toBe(undefined);
 
         $httpBackend.flush()
-        expect(ctrl.members).toEqual([{name:'Lucy Gathon Farah"',name:'Peter Kariuki'}]);
+        expect(ctrl.members.details).toEqual([{name:'Lucy Gathon Farah"',name:'Peter Kariuki'}]);
 
    });
 

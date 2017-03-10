@@ -11,12 +11,14 @@ describe('userProfile', function() {
     var ctrl, $httpBackend;
    
 
-beforeEach(inject(function($componentController,_$httpBackend_){
+beforeEach(inject(function($componentController,_$httpBackend_,$routeParams){
        $httpBackend = _$httpBackend_;
 
        //mock a get request to return names specified
-       $httpBackend.expectGET('members/members.json').
-       respond([{name:'Lucy Gathon Farah"',name:'Peter Kariuki'}]);
+       $httpBackend.expectGET('members/xyz.json').
+       respond([{name:'xyz'}]);
+
+       $routeParams.memberId = 'xyz';
        ctrl  = $componentController('userProfile');
 
    }));
@@ -25,7 +27,7 @@ beforeEach(inject(function($componentController,_$httpBackend_){
         expect(ctrl.profile).toBe(undefined);
 
         $httpBackend.flush()
-        expect(ctrl.profile).toEqual([{name:'Lucy Gathon Farah"',name:'Peter Kariuki'}]);
+        expect(ctrl.profile.details).toEqual([{name:'xyz']);
 
    });
 

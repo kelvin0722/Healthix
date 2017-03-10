@@ -1,1 +1,1 @@
- angular.module('members',[]);
+ angular.module('members',['ngRoute']);

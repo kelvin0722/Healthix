@@ -10,10 +10,10 @@
     </thead>
     <tbody>
     <tr ng-repeat="member in $ctrl.members">
-        <td><a ng-href="#!/members/{{member.name}}"></a>{{member.name}}</td>
-        <td>{{member.idno}}</td>
-        <td>{{member.email}}</td>
-        <td>{{member.phoneno}}</td>
+        <td><a ng-href="#!/members/{{member.detail.name}}"></a>{{member.details.name}}</td>
+        <td>{{member.details.idno}}</td>
+        <td>{{member.details.email}}</td>
+        <td>{{member.details.phoneno}}</td>
     </tr>
     </tbody>
 </table>

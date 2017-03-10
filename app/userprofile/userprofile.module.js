@@ -1,2 +1,2 @@
 
-angular.module('userProfile',[]);
+angular.module('userProfile',['ngRoute']);
